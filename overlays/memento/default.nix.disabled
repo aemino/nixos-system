@@ -1,0 +1,14 @@
+final: prev:
+let
+  version = "0.5.5-1";
+in
+{
+  memento = prev.appimageTools.wrapType2 {
+    name = "memento";
+
+    src = prev.fetchurl {
+      url = "https://github.com/ripose-jp/Memento/releases/download/v${version}-beta/Memento_Linux_x86_64.AppImage";
+      sha256 = "YNcatt8gUOrIcasICiKjWeo6zxKncKYiG9IZ7ktrmKg=";
+    };
+  };
+}
