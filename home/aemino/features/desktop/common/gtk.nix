@@ -1,5 +1,5 @@
 {
-  programs.firefox = {
+  gtk = {
     enable = true;
   };
 }

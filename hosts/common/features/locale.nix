@@ -1,7 +1,5 @@
+{ lib, ... }:
 {
-  lib,
-  ...
-}: {
   i18n = {
     defaultLocale = lib.mkDefault "en_US.UTF-8";
     extraLocaleSettings = {
@@ -12,7 +10,7 @@
       "ja_JP.UTF-8/UTF-8"
     ];
   };
-  
+
   location.provider = "geoclue2";
   time.timeZone = "America/Los_Angeles";
 }
