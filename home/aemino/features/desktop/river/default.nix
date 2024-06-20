@@ -1,7 +1,5 @@
 {
-  imports = [
-    ../common
-  ];
+  imports = [ ../common ];
 
   wayland.windowManager.river = {
     enable = true;
@@ -12,11 +10,10 @@
           "Super+Shift E" = "exit";
           "Super+Shift Q" = "close";
           "Super Return" = "spawn alacritty";
+          "Super Tab" = "spawn fuzzel";
         };
       };
-      spawn = [
-        "rivertile"
-      ];
+      spawn = [ "rivertile" ];
     };
   };
 }
